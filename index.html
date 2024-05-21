@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>worksheet#6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    1. --a;
+    - a is decremented by 1, so a becomes 1 (2-1=1)
+    <br>
+2. --a - --b;
+    - a is decremented by 1 (already done in step 1), so a is still 1
+    - b is decremented by 1, so b becomes 0 (1-1=0)
+    - The expression becomes 1 - 0 = 1
+    <br>
+
+3. --a - --b + ++b;
+    - a is decremented by 1 (already done in step 1), so a is still 1
+    - b is decremented by 1 (already done in step 2), so b is still 0
+    - b is incremented by 1, so b becomes 1 (0+1=1)
+    - The expression becomes 1 - 0 + 1 = 2
+    <br>
+
+4. --a - --b + ++b + b--;
+    - a is decremented by 1 (already done in step 1), so a is still 1
+    - b is decremented by 1 (already done in step 2), so b is still 1
+    - b is incremented by 1 (already done in step 3), so b is still 1
+    - b is decremented by 1, so b becomes 0 (1-1=0)
+    - The expression becomes 1 - 0 + 1 + 0 = 2
+    - However, the final value of b is 0, not 1, due to the post-decrement operation
+    So, the final values are a = 1, b = 0, and result = 1. Note that the result is 1, not 2, due to the post-decrement operation on b.
+
+<br>
+
+    a = 1<br>
+
+b = 0<br>
+result = 1<br>
+    
+    <script src="index.js"></script> 
+</body>
+</html>
